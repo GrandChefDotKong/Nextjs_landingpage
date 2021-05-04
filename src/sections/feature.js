@@ -7,6 +7,7 @@ import Performance from 'assets/feature/performance.svg';
 import Partnership from 'assets/feature/partnership.svg';
 import Subscription from 'assets/feature/subscription.svg';
 import Support from 'assets/feature/support.svg';
+import FeatureCardColumn from 'components/feature-card-column';
 
 const data = [
   {
@@ -45,7 +46,16 @@ const data = [
 
 export default function Feature() {
   return (
-   <h1>Feature</h1>
+   <section sx={{ variant: 'section.feature' }}>
+     <Container>
+       <SectionHeader slogan="Quality Features" title="Amazing useful features" />
+       <Grid sx={styles.grid}>
+        { data.map((item) => (
+          <FeatureCard key={item.id} src={item.imgSrc} altText={item.altText} title={item.title} text={item.text} />
+        )) }
+       </Grid>
+     </Container>
+   </section>
   );
 }
 
