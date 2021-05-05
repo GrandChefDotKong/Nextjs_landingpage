@@ -105,7 +105,7 @@ export default function TestimonialCard() {
      <Container css={{ textAlign: 'center' }}>
        <SectionHeader slogan="Testimonial" title="Meet Client Satisfaction" />
      </Container>
-     <Box sx={StyleSheet.carouselWrapper}>
+     <Box sx={styles.carouselWrapper}>
        <Carousel {...carouselParams}>
         { data.map((item) => (
           <Box sx={styles.reviewCard} key={item.id}>
