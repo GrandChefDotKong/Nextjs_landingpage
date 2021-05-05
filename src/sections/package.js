@@ -92,7 +92,7 @@ export default function Package() {
               aria-label="Annual"
               onClick={() => handlePricingPlan('annual')}
             >
-              Monthly Plan
+              Annual Plan
             </button>
           </Box>
         </Flex>
