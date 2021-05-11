@@ -12,11 +12,9 @@ export default function Banner() {
       <Container sx={styles.banner.container}>
         <Box sx={styles.banner.contentBox}>
           <Heading as="h1" variant="heroPrimary">
-            Top Quality Digital Products to Explore
+            Web creations for today's world.
           </Heading>
           <Text as="p" variant="heroSecondary">
-            Check out our website to find great software products and deals ! 
-            If you need a website or a web app this is the place to go !
           </Text>
           <Button variant="primary">Explore</Button>
         </Box>
