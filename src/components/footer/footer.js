@@ -19,7 +19,7 @@ export default function Footer() {
               )) }
             </nav>
           </Box>
-          <Text sx={styles.footer.copyright}>Copyright by { new Date().getFullYear() } Company Name</Text>
+          <Text sx={styles.footer.copyright}>Copyright by { new Date().getFullYear() } <Link path="https://github.com/GrandChefDotKong" label="Adrien Gautier Pauchet" /></Text>
         </Box>
       </Container>
     </footer>
